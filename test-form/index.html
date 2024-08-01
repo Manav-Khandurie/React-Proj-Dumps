@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Highlight Text</h1>
+      <div class="highlight-section">
+        <label for="highlightText">Highlight Text</label>
+        <input
+          type="text"
+          id="highlightText"
+          name="highlightText"
+          placeholder="Enter highlight text"
+        />
+
+        <label for="highlightColor">Highlight Color</label>
+        <input
+          type="text"
+          id="highlightColor"
+          name="highlightColor"
+          placeholder="Enter highlight color"
+        />
+
+        <label for="content">Content</label>
+        <textarea
+          id="content"
+          name="content"
+          rows="4"
+          placeholder="Enter content here"
+        ></textarea>
+
+        <button class="save-btn" onclick="addHighlight()">Save</button>
+      </div>
+      <div class="filter-section">
+        <select id="filter1">
+          <option value="all">Show All</option>
+        </select>
+        <select id="filter2">
+          <option value="all">Show All</option>
+        </select>
+      </div>
+      <div id="highlightContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
